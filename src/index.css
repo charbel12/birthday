@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateY(-100px) rotate(20deg); opacity: 0; }
+}
+
+@keyframes float-left {
+  0% { transform: scale(0.8) rotate(-10deg); }
+  50% { transform: scale(1) rotate(10deg); }
+  100% { transform: scale(0.8) rotate(-10deg); }
+}
+
+@keyframes float-right {
+  0% { transform: scale(0.8) rotate(10deg); }
+  50% { transform: scale(1.1) rotate(-10deg); }
+  100% { transform: scale(0.8) rotate(10deg); }
+}
+
+.animate-float-particle {
+  animation: float linear infinite;
+}
+
+.animate-float-left {
+  animation: float-left 4s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-right 5s ease-in-out infinite;
+}
