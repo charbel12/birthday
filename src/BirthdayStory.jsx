@@ -130,6 +130,14 @@ export default function BirthdayStory() {
             text: "Admiring the view, but knowing the best view is right next to me.",
         },
         {
+            id: 15,
+            date: "2024-10-05",
+            title: "Beautiful Views",
+            subtitle: "Sky Rooftop",
+            image: viewImg,
+            text: "Admiring the view, but knowing the best view is right next to me.",
+        },
+        {
             id: 20,
             date: "2025-02-14",
             title: "Forever Us",
